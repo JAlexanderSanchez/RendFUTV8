@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Información</title>
+</head>
+
+<body>
+<style>
+    body {
+        background-color: #7CAA98;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237caa98'/%3E%3Cstop offset='1' stop-color='%237caa98' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237caa98'/%3E%3Cstop offset='1' stop-color='%237caa98' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237caa98'/%3E%3Cstop offset='1' stop-color='%237caa98' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237CAA98'/%3E%3Cstop offset='1' stop-color='%237CAA98' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237CAA98'/%3E%3Cstop offset='1' stop-color='%237CAA98' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237CAA98'/%3E%3Cstop offset='1' stop-color='%237CAA98' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0;
+    }
+
+    .contenedor {
+        display: flex;
+        background-color: #00CCFF;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2369dd8a'/%3E%3Cstop offset='1' stop-color='%2369dd8a' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%234fd9c5'/%3E%3Cstop offset='1' stop-color='%234fd9c5' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23a6cba4'/%3E%3Cstop offset='1' stop-color='%23a6cba4' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300CCFF'/%3E%3Cstop offset='1' stop-color='%2300CCFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23CBD6B8'/%3E%3Cstop offset='1' stop-color='%23CBD6B8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238FC1A9'/%3E%3Cstop offset='1' stop-color='%238FC1A9' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 15px;
+        margin-right: 0px;
+
+    }
+
+    .bienvenido {
+        display: flex;
+        background-color: #00CCFF;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2369dd8a'/%3E%3Cstop offset='1' stop-color='%2369dd8a' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%234fd9c5'/%3E%3Cstop offset='1' stop-color='%234fd9c5' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23a6cba4'/%3E%3Cstop offset='1' stop-color='%23a6cba4' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300CCFF'/%3E%3Cstop offset='1' stop-color='%2300CCFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23CBD6B8'/%3E%3Cstop offset='1' stop-color='%23CBD6B8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238FC1A9'/%3E%3Cstop offset='1' stop-color='%238FC1A9' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 10px;
+        color: #000111;
+        font-size: 30px;
+        margin-right: 15px;
+        margin-top: 3px;
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: #177199;
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    .menu li a:hover {
+        background: #11557C;
+        text-align: center;
+        color: white;
+        margin: 0;
+    }
+
+    .dropdown {
+        margin: 0px auto;
+        color: #000;
+        width: 100px;
+        margin-left: 850px;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+        margin-top: 20px;
+        margin-left: -25px;
+        margin-right: 10px;
+    }
+
+    li {
+        margin-left: -20px;
+        list-style: none;
+    }
+
+    .cerrar{
+        margin-top: -100px;
+        margin-left: 0px;
+    }
+
+</style>
+
+<div class="contenedor">
+    <label class="bienvenido">RendFUT</label>
+    <ul class="menu">
+        <li class="li">
+            <a href="/dashboard" method="get">Home</a>
+            <a href="/informacion" method="get">Información</a>
+            <a id="prediccion-form" href="/prediccion" method="get">Predicción</a>
+        </li>
+    </ul>
+
+    <ul class="dropdown">
+        <li class="list">
+            <a href="#" class="link">
+                <img class="icon" src="{{ url_for('static', filename='login.png') }}">
+                <a class="cerrar" href="/">Cerrar Sesión</a>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<style>
+    .infor {
+        background: radial-gradient(#30799B, #000);
+        padding: 0px;
+        font-family: "Fira Code Light";
+        font-size: 2.5rem;
+        text-align: center;
+
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .btnelegir {
+        border: 0;
+        background: radial-gradient(#FAF3DD, #11557C);
+        border-radius: 8px;
+        color: #000111;
+        display: flex;
+        font-size: 15px;
+        padding: 4px;
+        cursor: pointer;
+        transition: .3s;
+        margin-left: 50px;
+    }
+
+    .btnelegir span {
+        background-color: #FAF3DA;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23e2e4c8'/%3E%3Cstop offset='1' stop-color='%23e2e4c8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23e2e4c8'/%3E%3Cstop offset='1' stop-color='%23e2e4c8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23c8d6b9'/%3E%3Cstop offset='1' stop-color='%23c8d6b9' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FAF3DA'/%3E%3Cstop offset='1' stop-color='%23FAF3DA' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23C8D6B9'/%3E%3Cstop offset='1' stop-color='%23C8D6B9' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23C8D6B9'/%3E%3Cstop offset='1' stop-color='%23C8D6B9' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 16px 24px;
+        border-radius: 6px;
+        transition: .3s;
+    }
+
+    .btnelegir:hover span {
+        background: none;
+        color: #000111;
+    }
+
+    .btnelegir:active {
+        transform: scale(0.9);
+    }
+
+</style>
+
+<!--body-->
+<h1 class="infor">INFORMACIÓN</h1>
+
+<!-- Botón para obtener la lista de ligas -->
+<a id="elegir-liga-form" method="post">
+    <button class="btnelegir" type="button" onclick="obtenerLigas()"><span>Elegir Liga</span></button>
+</a>
+
+<!-- ELEGIR LIGAS -->
+<style>
+    .ligas {
+        background-color: #8FC1A9;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238FC1A9'/%3E%3Cstop offset='1' stop-color='%238FC1A9'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%238FC1A9' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%238FC1A9' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 2px;
+        font-family: system-ui;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+</style>
+
+<!-- Div para mostrar la lista de ligas -->
+<div class="ligas" id="ligas-container" style="display: none;">
+    <h2>Ligas disponibles:</h2>
+    <ul id="ligas-list"></ul>
+</div>
+
+<!--FORMULARIO LIGAS -->
+<style>
+    .formulario {
+        width: 400px;
+        margin: auto;
+        background-color: #7CAA98;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23a2c0a6'/%3E%3Cstop offset='1' stop-color='%23a2c0a6' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237caa98'/%3E%3Cstop offset='1' stop-color='%237caa98' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23a2c0a6'/%3E%3Cstop offset='1' stop-color='%23a2c0a6' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237CAA98'/%3E%3Cstop offset='1' stop-color='%237CAA98' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23C8D6B9'/%3E%3Cstop offset='1' stop-color='%23C8D6B9' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237CAA98'/%3E%3Cstop offset='1' stop-color='%237CAA98' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 30px;
+        margin-top: 50px;
+        border-radius: 4px;
+        font-family: "calibri";
+        color: #000111;
+    }
+
+    .formulario button {
+        border: 0;
+        background: radial-gradient(#FAF3DD, #11557C);
+        border-radius: 4px;
+        color: #000111;
+        display: flex;
+        font-size: 15px;
+        padding: 3px;
+        cursor: pointer;
+        transition: .3s;
+        margin: 10px;
+    }
+
+    .formulario button span {
+        background-color: #FAF3DA;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23e2e4c8'/%3E%3Cstop offset='1' stop-color='%23e2e4c8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23e2e4c8'/%3E%3Cstop offset='1' stop-color='%23e2e4c8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23c8d6b9'/%3E%3Cstop offset='1' stop-color='%23c8d6b9' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FAF3DA'/%3E%3Cstop offset='1' stop-color='%23FAF3DA' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23C8D6B9'/%3E%3Cstop offset='1' stop-color='%23C8D6B9' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23C8D6B9'/%3E%3Cstop offset='1' stop-color='%23C8D6B9' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 16px 24px;
+        border-radius: 6px;
+        transition: .3s;
+    }
+
+    .formulario button:hover span {
+        background: none;
+        color: #000111;
+    }
+
+    .formulario button:active {
+        transform: scale(0.9);
+    }
+
+    .formulario label {
+
+    }
+
+    .controlLiga {
+        margin-bottom: 16px;
+        margin-right: 25px;
+    }
+
+</style>
+
+<style>
+    .controlLiga {
+        padding: 12px;
+        border: 1px solid #efc9af;
+        border-radius: 4px;
+        font-weight: bold;
+        width: 350px;
+    }
+</style>
+
+
+<!-- Formulario para escribir el ID de la liga -->
+<section class="formulario">
+    <form id="escribir-form" method="post" onsubmit="event.preventDefault(); obtenerEquipos()">
+        <input class="controlLiga" type="text" id="campo-escritura" name="idLiga" required placeholder="ID de la liga">
+        <button ctype="submit"><span>Enviar</span></button>
+    </form>
+</section>
+
+<!-- ELEGIR EQUIPO -->
+<style>
+    .equipo {
+        background-color: #8FC1A9;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238FC1A9'/%3E%3Cstop offset='1' stop-color='%238FC1A9'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%238FC1A9' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%238FC1A9' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 2px;
+        font-family: system-ui;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+</style>
+
+<!-- Div para mostrar los equipos -->
+<div class="equipo" id="equipos-container" style="display: none;">
+    <h2>Equipos de la liga:</h2>
+    <ul id="equipos-list"></ul>
+</div>
+
+<!-- FORMULARIO EQUIPO -->
+<style>
+    .formularioEquipo {
+        width: 400px;
+        background-color: #7CAA98;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23a2c0a6'/%3E%3Cstop offset='1' stop-color='%23a2c0a6' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237caa98'/%3E%3Cstop offset='1' stop-color='%237caa98' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23a2c0a6'/%3E%3Cstop offset='1' stop-color='%23a2c0a6' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237CAA98'/%3E%3Cstop offset='1' stop-color='%237CAA98' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23C8D6B9'/%3E%3Cstop offset='1' stop-color='%23C8D6B9' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237CAA98'/%3E%3Cstop offset='1' stop-color='%237CAA98' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 4px;
+        font-family: "calibri";
+        color: #000111;
+    }
+
+    .formularioEquipo button {
+        border: 0;
+        background: radial-gradient(#FAF3DD, #11557C);
+        border-radius: 4px;
+        color: #000111;
+        display: flex;
+        font-size: 15px;
+        padding: 3px;
+        cursor: pointer;
+        transition: .3s;
+        margin-bottom: 16px;
+        margin-top: 20px;
+    }
+
+    .formularioEquipo button span {
+        background-color: #FAF3DA;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23e2e4c8'/%3E%3Cstop offset='1' stop-color='%23e2e4c8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23e2e4c8'/%3E%3Cstop offset='1' stop-color='%23e2e4c8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23c8d6b9'/%3E%3Cstop offset='1' stop-color='%23c8d6b9' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FAF3DA'/%3E%3Cstop offset='1' stop-color='%23FAF3DA' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23C8D6B9'/%3E%3Cstop offset='1' stop-color='%23C8D6B9' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23C8D6B9'/%3E%3Cstop offset='1' stop-color='%23C8D6B9' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 16px 24px;
+        border-radius: 6px;
+        transition: .3s;
+    }
+
+    .formularioEquipo button:hover span {
+        background: none;
+        color: #000111;
+    }
+
+    .formularioEquipo button:active {
+        transform: scale(0.9);
+    }
+
+    .formularioEquipo label {
+
+    }
+
+    .controlEquipo {
+        padding: 12px;
+        border: 1px solid #efc9af;
+        border-radius: 4px;
+        font-weight: bold;
+        width: 350px;
+    }
+</style>
+
+<!-- Formulario para ingresar el ID del equipo -->
+<section class="formularioEquipo">
+    <form id="ingresar-equipo-form" method="post" onsubmit="event.preventDefault(); obtenerEquipo()">
+        <input class="controlEquipo" type="text" id="campo-escritura-equipo" name="idEquipo" required
+               placeholder="ID del equipo">
+        <!-- Botón para obtener la información de los jugadores -->
+        <button class="btnJugadores" type="button" onclick="obtenerJugadores()"><span>Jugadores</span></button>
+        <!-- Botón para obtener la información del equipo -->
+        <button class="btnGeneral" type="submit"><span>Información General</span></button>
+
+    </form>
+</section>
+
+<!-- ELEGIR informacion equipo -->
+<style>
+    .infoequipo {
+        background-color: #8FC1A9;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238FC1A9'/%3E%3Cstop offset='1' stop-color='%238FC1A9'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%238FC1A9' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%238FC1A9' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 2px;
+        font-family: system-ui;
+        font-size: 1rem;
+        margin-top: 20px;
+
+    }
+</style>
+
+<!-- Div para mostrar la información del equipo -->
+<div class="infoequipo" id="equipo-info" style="display: none;">
+    <h2>Información del equipo:</h2>
+    <p><strong>Nombre:</strong> <span id="nombre-equipo"></span></p>
+    <p><strong>Abreviatura:</strong> <span id="abreviatura-equipo"></span></p>
+    <p><strong>Fundado en:</strong> <span id="fundado-equipo"></span></p>
+    <p><strong>Estadio:</strong> <span id="estadio-equipo"></span></p>
+</div>
+
+<!-- ELEGIR EQUIPO -->
+<style>
+    .jugadores {
+        background-color: #8FC1A9;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238FC1A9'/%3E%3Cstop offset='1' stop-color='%238FC1A9'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%238FC1A9' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%238FC1A9' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 2px;
+        font-family: system-ui;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+</style>
+
+<!-- Div para mostrar la información de los jugadores -->
+<div class="jugadores" id="jugadores-info" style="display: none;">
+    <h2>Jugadores del equipo:</h2>
+    <ul id="jugadores-list"></ul>
+</div>
+
+
+<script>
+    function obtenerLigas() {
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', '/elegir_liga');
+        xhr.setRequestHeader('Content-Type', 'application/json');
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const data = JSON.parse(xhr.responseText);
+                mostrarLigas(data);
+            } else {
+                alert('Error al obtener las ligas. Por favor, inténtalo nuevamente más tarde.');
+            }
+        };
+
+        xhr.send();
+    }
+
+    function mostrarLigas(ligas) {
+        const ligasContainer = document.getElementById('ligas-container');
+        const ligasList = document.getElementById('ligas-list');
+
+        // Vaciar la lista de ligas antes de mostrar las nuevas
+        ligasList.innerHTML = '';
+
+        // Mostrar las ligas en la lista
+        ligas.forEach(function (liga) {
+            const li = document.createElement('li');
+            li.textContent = liga.name;
+            ligasList.appendChild(li);
+        });
+
+        // Mostrar el contenedor de ligas
+        ligasContainer.style.display = 'block';
+    }
+
+    function obtenerEquipos() {
+        const xhr = new XMLHttpRequest();
+        const idLiga = document.getElementById('campo-escritura').value;
+        const url = `/equipos/${idLiga}`;
+
+        xhr.open('GET', url);
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const data = JSON.parse(xhr.responseText);
+                mostrarEquipos(data);
+            } else {
+                alert('Error al obtener los equipos. Por favor, inténtalo nuevamente más tarde.');
+            }
+        };
+
+        xhr.send();
+    }
+
+    function mostrarEquipos(equipos) {
+        const equiposContainer = document.getElementById('equipos-container');
+        const equiposList = document.getElementById('equipos-list');
+
+        // Vaciar la lista de equipos antes de mostrar los nuevos
+        equiposList.innerHTML = '';
+
+        // Mostrar los equipos en la lista
+        equipos.forEach(function (equipo) {
+            const li = document.createElement('li');
+            li.textContent = equipo.name;
+            equiposList.appendChild(li);
+        });
+
+        // Mostrar el contenedor de equipos
+        equiposContainer.style.display = 'block';
+    }
+
+    function obtenerEquipo() {
+        const xhr = new XMLHttpRequest();
+        const idEquipo = document.getElementById('campo-escritura-equipo').value;
+        const url = `/equipo/${idEquipo}`;
+
+        xhr.open('GET', url);
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const data = JSON.parse(xhr.responseText);
+                mostrarEquipoInfo(data);
+            } else {
+                alert('Error al obtener la información del equipo. Por favor, inténtalo nuevamente más tarde.');
+            }
+        };
+
+        xhr.send();
+    }
+
+    function mostrarEquipoInfo(equipo) {
+        const equipoInfo = document.getElementById('equipo-info');
+
+        // Mostrar la información del equipo en los elementos del DOM
+        document.getElementById('nombre-equipo').textContent = equipo.name;
+        document.getElementById('abreviatura-equipo').textContent = equipo.shortName;
+        document.getElementById('fundado-equipo').textContent = equipo.founded;
+        document.getElementById('estadio-equipo').textContent = equipo.venue;
+
+        // Mostrar el contenedor de información del equipo
+        equipoInfo.style.display = 'block';
+    }
+
+    function obtenerJugadores() {
+        const xhr = new XMLHttpRequest();
+        const idEquipo = document.getElementById('campo-escritura-equipo').value;
+        const url = `/jugadores/${idEquipo}`;
+
+        xhr.open('GET', url);
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const jugadores = JSON.parse(xhr.responseText);
+                mostrarJugadoresInfo(jugadores);
+            } else {
+                alert('Error al obtener la información de los jugadores. Por favor, inténtalo nuevamente más tarde.');
+            }
+        };
+
+        xhr.send();
+    }
+
+    function mostrarJugadoresInfo(jugadores) {
+        const jugadoresInfo = document.getElementById('jugadores-info');
+        const jugadoresList = document.getElementById('jugadores-list');
+
+        // Vaciar la lista de jugadores antes de mostrar los nuevos
+        jugadoresList.innerHTML = '';
+
+        // Mostrar los jugadores en la lista
+        jugadores.forEach(function (jugador) {
+            const li = document.createElement('li');
+            li.textContent = jugador.name;
+            jugadoresList.appendChild(li);
+        });
+
+        // Mostrar el contenedor de información de los jugadores
+        jugadoresInfo.style.display = 'block';
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elegir Liga</title>
+
+<body>
+    <h1>Elegir Liga</h1>
+
+    <!-- Tabla de ligas -->
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+        </tr>
+        {% for liga in ligas %}
+            <tr>
+                <td>{{ liga.id }}</td>
+                <td>{{ liga.name }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <!-- Navegación entre páginas -->
+    {% if total_pages > 1 %}
+        <div>
+            {% if page > 1 %}
+                <a href="?page=1">Primera</a>
+                <a href="?page={{ page - 1 }}">Anterior</a>
+            {% endif %}
+
+            {% if page < total_pages %}
+                <a href="?page={{ page + 1 }}">Siguiente</a>
+                <a href="?page={{ total_pages }}">Última</a>
+            {% endif %}
+        </div>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PREDICCIÓN</title>
+</head>
+<body>
+
+<style>
+    body {
+        background-color: #7CAA98;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237caa98'/%3E%3Cstop offset='1' stop-color='%237caa98' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237caa98'/%3E%3Cstop offset='1' stop-color='%237caa98' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237caa98'/%3E%3Cstop offset='1' stop-color='%237caa98' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237CAA98'/%3E%3Cstop offset='1' stop-color='%237CAA98' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237CAA98'/%3E%3Cstop offset='1' stop-color='%237CAA98' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237CAA98'/%3E%3Cstop offset='1' stop-color='%237CAA98' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0;
+    }
+
+    .contenedor {
+        display: flex;
+        background-color: #00CCFF;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2369dd8a'/%3E%3Cstop offset='1' stop-color='%2369dd8a' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%234fd9c5'/%3E%3Cstop offset='1' stop-color='%234fd9c5' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23a6cba4'/%3E%3Cstop offset='1' stop-color='%23a6cba4' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300CCFF'/%3E%3Cstop offset='1' stop-color='%2300CCFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23CBD6B8'/%3E%3Cstop offset='1' stop-color='%23CBD6B8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238FC1A9'/%3E%3Cstop offset='1' stop-color='%238FC1A9' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 15px;
+        margin-right: 0px;
+    }
+
+    .bienvenido {
+        display: flex;
+        background-color: #00CCFF;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2369dd8a'/%3E%3Cstop offset='1' stop-color='%2369dd8a' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%234fd9c5'/%3E%3Cstop offset='1' stop-color='%234fd9c5' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23a6cba4'/%3E%3Cstop offset='1' stop-color='%23a6cba4' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300CCFF'/%3E%3Cstop offset='1' stop-color='%2300CCFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23CBD6B8'/%3E%3Cstop offset='1' stop-color='%23CBD6B8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238FC1A9'/%3E%3Cstop offset='1' stop-color='%238FC1A9' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 10px;
+        color: #000111;
+        font-size: 30px;
+        margin-right: 15px;
+        margin-top: 3px;
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: #177199;
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    .menu li a:hover {
+        background: #11557C;
+        text-align: center;
+        color: white;
+        margin: 0;
+    }
+
+    .dropdown {
+        margin: 0px auto;
+        color: #000;
+        width: 100px;
+        margin-left: 850px;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+        margin-top: 20px;
+        margin-left: -25px;
+        margin-right: 10px;
+    }
+
+    li {
+        margin-left: -20px;
+        list-style: none;
+    }
+
+    .cerrar{
+        margin-top: -100px;
+        margin-left: 0px;
+    }
+</style>
+
+<div class="contenedor">
+    <label class="bienvenido">RendFUT</label>
+    <ul class="menu">
+        <li class="li">
+            <a href="/dashboard" method="get">Home</a>
+            <a href="/informacion" method="get">Información</a>
+            <a id="prediccion-form" href="/prediccion" method="get">Predicción</a>
+        </li>
+    </ul>
+
+    <ul class="dropdown">
+        <li class="list">
+            <a href="#" class="link">
+                <img class="icon" src="{{ url_for('static', filename='login.png') }}">
+                <a class="cerrar" href="/">Cerrar Sesión</a>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<style>
+    .pred {
+        background: radial-gradient(#30799B, #000);
+        padding: 0px;
+        font-family: "Fira Code Light";
+        font-size: 2.5rem;
+        text-align: center;
+
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+</style>
+
+<h1 class="pred">PÁGINA DE PREDICCIÓN</h1>
+
+<style>
+    .btnequipos {
+        border: 0px;
+        background: radial-gradient(#FAF3DD, #11557C);
+        border-radius: 8px;
+        color: #000111;
+        display: flex;
+        font-size: 15px;
+        padding: 3px;
+        cursor: pointer;
+        transition: .3s;
+        margin-left: 30px;
+    }
+
+    .btnequipos span {
+        background-color: #FAF3DD;
+        padding: 16px 24px;
+        border-radius: 6px;
+        transition: .3s;
+    }
+
+    .btnequipos:hover span {
+        background: none;
+        color: #000111;
+    }
+
+    .btnequipos:active {
+        transform: scale(0.9);
+    }
+</style>
+
+<style>
+    .liga{
+        margin-left: 30px;
+        font-family: "helvetica";
+        font-weight: 600;
+    }
+</style>
+
+<div class="liga" id="champions-league-info"></div>
+<button class="btnequipos" type="button" onclick="obtenerEquipos()"><span>Equipo</span></button>
+
+<!-- ELEGIR LIGAS -->
+<style>
+    .eq {
+        background-color: #8FC1A9;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238FC1A9'/%3E%3Cstop offset='1' stop-color='%238FC1A9'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%238FC1A9' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%238FC1A9' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 2px;
+        font-family: system-ui;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+</style>
+
+<div class="eq" id="equipos-info">
+
+</div>
+
+<script>
+    // ... código JavaScript previo ...
+
+    // Obtener la información de la liga Champions League
+    function obtenerChampionsLeague() {
+        const xhr = new XMLHttpRequest();
+        const url = '/champions_league';
+
+        xhr.open('GET', url);
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const championsLeague = JSON.parse(xhr.responseText);
+                mostrarChampionsLeagueInfo(championsLeague);
+            } else {
+                alert('Error al obtener la información de la liga Champions League. Por favor, inténtalo nuevamente más tarde.');
+            }
+        };
+
+        xhr.send();
+    }
+
+    // Mostrar la información de la liga Champions League en el DOM
+    function mostrarChampionsLeagueInfo(championsLeague) {
+        const championsLeagueInfo = document.getElementById('champions-league-info');
+
+        // Mostrar la información de la liga en el elemento del DOM
+        const paragraph = document.createElement('p');
+        paragraph.textContent = `Liga Disponible: ${championsLeague.name} (ID: ${championsLeague.id})`;
+        championsLeagueInfo.appendChild(paragraph);
+    }
+
+    // Llamar a la función para obtener la información de la liga Champions League al cargar la página
+    window.onload = function () {
+        obtenerChampionsLeague();
+    };
+
+    // Obtener los equipos de la liga Champions League
+    function obtenerEquipos() {
+        const xhr = new XMLHttpRequest();
+        const url = '/equipos_champions_league';
+
+        xhr.open('GET', url);
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const equipos = JSON.parse(xhr.responseText);
+                mostrarEquiposInfo(equipos);
+            } else {
+                alert('Error al obtener los equipos de la liga Champions League. Por favor, inténtalo nuevamente más tarde.');
+            }
+        };
+
+        xhr.send();
+    }
+
+    // Mostrar la información de los equipos en el DOM
+    function mostrarEquiposInfo(equipos) {
+        const equiposInfo = document.getElementById('equipos-info');
+
+        // Vaciar la lista de equipos antes de mostrar los nuevos
+        equiposInfo.innerHTML = '';
+
+        // Mostrar los equipos en la lista
+        const listaEquipos = document.createElement('ul');
+        equipos.forEach(function (equipo) {
+            const li = document.createElement('li');
+            li.textContent = `${equipo.name} (ID: ${equipo.id})`;
+            listaEquipos.appendChild(li);
+        });
+        equiposInfo.appendChild(listaEquipos);
+    }
+</script>
+</body>
+</html>
